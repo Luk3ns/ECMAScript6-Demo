@@ -32,7 +32,7 @@ export default function getRepos() {
     })
     .then(arr => arr
         .filter(r => !FORBIDDEN_REPOS.includes(r.name))
-        .filter(r => r.size > 0)
+        .filter(r => r.stargazers_count > 0)
         .map(convert)
     );
 }

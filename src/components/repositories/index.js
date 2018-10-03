@@ -29,7 +29,7 @@ export class GitHubRepo {
     }
 
     get starsCount(){
-        return this.stars > 0 ? `(${this.stars} stars)` : '';
+        return this.stars > 0 ? `<i class="far fa-star" title="${this.stars} stars"></i>` : '';
     }
 
     toString(){
